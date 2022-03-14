@@ -1,5 +1,6 @@
 from http import HTTPClient
 
+__all__ = ("SafeForWork",)
 
 class SafeForWork:
 
