@@ -1,4 +1,4 @@
-from httpclient import HTTPClient
+from http import HTTPClient
 
 
 class NotSafeForWork:
