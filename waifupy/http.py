@@ -1,5 +1,6 @@
 from aiohttp import ClientSession
 
+__all__ = ("HTTPClient",)
 
 class HTTPClient:
 
