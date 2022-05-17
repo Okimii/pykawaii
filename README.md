@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/92546867/168890028-97e623d5-04eb-41b0-98ec-6bd4dd922391.png)
+![image](https://user-images.githubusercontent.com/92546867/168891122-5ac081f9-d77c-41f6-856d-d91af37fec19.png)
 
 Waifupy
 =======
