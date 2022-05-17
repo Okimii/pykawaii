@@ -22,16 +22,41 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-from .client import *
-from .http import *
-from .cache import *
+from .http import HTTPClient
+from .cache import Cache
+from .models import NotSafeForWork
+from .models import SafeForWork
 
-<<<<<<< HEAD
-__title__ = "pykawaii"
-=======
-__title__ = "Waifupy"
->>>>>>> parent of 2ee941b (Delete pykawaii directory)
-__author__ = "Okimii"
-__license__ = "MIT"
-__copyright__ = "Copyright 2022-present Okimii"
-__version__ = "2.2.0"
+__all__ = ["Client"]
+
+
+class Client(HTTPClient):
+    def __init__(self) -> None:
+        self.cache = Cache
+        super().__init__(self.cache)
+
+    @property
+    def nsfw(self) -> NotSafeForWork:
+
+        """
+        nsfw attribute to return an instance of the NotSafeForWork class.
+        
+        Returns
+        -------
+        :class:`NotSafeForWork`
+        """
+
+        return NotSafeForWork(self)
+
+    @property
+    def sfw(self) -> SafeForWork:
+
+        """
+        sfw attribute to return an instance of the SafeForWork class.
+        
+        Returns
+        -------
+        :class:`SafeForWork`
+        """
+
+        return SafeForWork(self)

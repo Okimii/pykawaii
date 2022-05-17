@@ -22,16 +22,33 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-from .client import *
-from .http import *
-from .cache import *
+from __future__ import annotations
 
-<<<<<<< HEAD
-__title__ = "pykawaii"
-=======
-__title__ = "Waifupy"
->>>>>>> parent of 2ee941b (Delete pykawaii directory)
-__author__ = "Okimii"
-__license__ = "MIT"
-__copyright__ = "Copyright 2022-present Okimii"
-__version__ = "2.2.0"
+from typing import Any
+
+
+__all__ = ["Cache"]
+
+
+class Cache:
+    def __init__(self, cachable: bool) -> None:
+        self.cachable = cachable
+        self.cache: list[str] = []
+
+    def __setattr__(self, name: str, value: Any) -> None:
+        setattr(self, name, value)
+
+    def __getattribute__(self, name: str) -> Any:
+        getattr(self, name)
+
+    
+    def getobj(self, index: int) -> str | None:
+        if self.cachable:
+            return self.cache[index]
+        return None
+
+    
+    def setobj(self, value: str) -> str | None:
+        if self.cachable:
+            return self.cache.append(value)
+        return None

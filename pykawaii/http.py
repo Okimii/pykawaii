@@ -22,16 +22,22 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-from .client import *
-from .http import *
-from .cache import *
+import aiohttp
 
-<<<<<<< HEAD
-__title__ = "pykawaii"
-=======
-__title__ = "Waifupy"
->>>>>>> parent of 2ee941b (Delete pykawaii directory)
-__author__ = "Okimii"
-__license__ = "MIT"
-__copyright__ = "Copyright 2022-present Okimii"
-__version__ = "2.2.0"
+from .cache import Cache
+
+__all__ = ["HTTPClient"]
+
+
+class HTTPClient:
+
+    BASE = "https://api.waifu.pics/"
+
+    def __init__(self, cache: Cache) -> None:
+        self.cache = cache()
+
+    async def request(self, type: str, category: str, /) -> dict[str, str]:
+        async with aiohttp.request("GET", f"{self.BASE}{type}{category}") as payload:
+            parsedpayload = await payload.json()
+            self.cache.setobj(parsedpayload)
+            return parsedpayload
