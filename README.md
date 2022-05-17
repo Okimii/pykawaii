@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/92546867/168926452-28c8d415-0f2f-438a-bdb6-38e182db5b52.png)
+
 Pykawaii
 =======
 [![pypi!](https://img.shields.io/badge/pykawaii-Pypi-yellow)](https://pypi.org/project/waifpy/) [![documentation!](https://img.shields.io/badge/pykawaii-Docs-blue)](https://waifpy.readthedocs.io/en/latest/)
