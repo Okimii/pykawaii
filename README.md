@@ -35,12 +35,8 @@ Quick Example
 
 ``` py
 import waifpy
-from waifpy import HTTPClient
 
-cachable = True # Set to True if you want your client to cache payloads. If you dont want your client to cache paylods you can set the kwarg to False or do not call it.
-http = HTTPClient
-
-waifu = waifpy.Client(cacheable=cacheable, http=http)
+waifu = waifpy.Client()
 
 async main() -> None:
     sfw_waifu_payload = await waifu.sfw.waifu()
