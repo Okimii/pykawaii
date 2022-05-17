@@ -26,7 +26,7 @@ from .client import *
 from .http import *
 from .cache import *
 
-__title__ = "Waifupy"
+__title__ = "pykawaii"
 __author__ = "Okimii"
 __license__ = "MIT"
 __copyright__ = "Copyright 2022-present Okimii"
