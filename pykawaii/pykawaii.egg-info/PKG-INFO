@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: pykawaii
-Version: 2.0.0
+Version: 2.2.0
 Home-page: https://github.com/Okimii/pykawaii
 Author: Okimii
 License: MIT
@@ -8,8 +8,7 @@ Keywords: waifu.pics python api wrapper
 Description-Content-Type: text/markdown
 License-File: LICENSE
 
-![image](https://user-images.githubusercontent.com/92546867/168911637-b661ab7d-767d-4e14-8dec-d59c99c8b5ac.png)
-
+![image](https://user-images.githubusercontent.com/92546867/168926452-28c8d415-0f2f-438a-bdb6-38e182db5b52.png)
 
 Pykawaii
 =======
