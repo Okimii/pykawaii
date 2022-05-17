@@ -1,4 +1,5 @@
-![image](https://user-images.githubusercontent.com/92546867/168892105-39ac5d0f-815a-44bb-9ed2-f1f5613a7bef.png)
+![image](https://user-images.githubusercontent.com/92546867/168911637-b661ab7d-767d-4e14-8dec-d59c99c8b5ac.png)
+
 
 Waifpy
 =======
