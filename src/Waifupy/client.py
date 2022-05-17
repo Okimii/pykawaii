@@ -1,7 +1,7 @@
 from .http import HTTPClient
 from .cache import Cache
-from .entities import NotSafeForWork
-from .entities import SafeForWork
+from .models import NotSafeForWork
+from .models import SafeForWork
 
 __all__ = ["Client"]
 
