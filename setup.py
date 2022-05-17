@@ -9,8 +9,8 @@ setup(
     version='2.0.0',
     license='MIT',
     author='Okimii',
-    packages=find_packages('src/Waifupy'),
-    package_dir={'': 'src'},
+    packages=find_packages('Waifupy'),
+    package_dir={'': 'Waifupy'},
     url='https://github.com/Okimii/waifupy',
     keywords='waifu.pics python api wrapper ',
     install_requires=[
