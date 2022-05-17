@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+Waifupics/models/__init__.py
+Waifupics/models/nsfw.py
+Waifupics/models/sfw.py
+Waifupics/waifupics.egg-info/PKG-INFO
+Waifupics/waifupics.egg-info/SOURCES.txt
+Waifupics/waifupics.egg-info/dependency_links.txt
+Waifupics/waifupics.egg-info/requires.txt
+Waifupics/waifupics.egg-info/top_level.txt
