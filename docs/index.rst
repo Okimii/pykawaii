@@ -1,19 +1,10 @@
 Welcome to Waifpy
 =================================
-.. currentmodule:: Waifpy
+.. automodule:: waifpy
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-
-.. autoclass:: models/NotSafeForWork
-   :members:
-   
-.. autoclass:: models/SafeForWork
-   :members:
-   
-.. autoclass:: Client
-   :members:
   
 ==================
 
