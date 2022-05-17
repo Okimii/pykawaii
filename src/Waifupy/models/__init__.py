@@ -1,2 +1,2 @@
-from nsfw import *
-from sfw import *
+from .nsfw import *
+from .sfw import *
