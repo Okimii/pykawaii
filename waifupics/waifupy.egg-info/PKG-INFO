@@ -1,6 +1,16 @@
+Metadata-Version: 2.1
+Name: waifupy
+Version: 2.0.0
+Home-page: https://github.com/Okimii/waifupy
+Author: Okimii
+License: MIT
+Keywords: waifu.pics python api wrapper
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
 ![image](https://user-images.githubusercontent.com/92546867/168892105-39ac5d0f-815a-44bb-9ed2-f1f5613a7bef.png)
 
-Waifupics
+Waifupy
 =======
 
 Python api wrapper for the waifu.pics api made by: [okimii#0434](https://discord.com/users/637458038915203127)
@@ -20,10 +30,10 @@ To install the library, you can just run thefollowing command:
 
 ``` sh
 # Linux/macOS
-python3 -m pip install -U waifupics
+python3 -m pip install -U waifupy
 
 # Windows
-py -3 -m pip install -U waifupics
+py -3 -m pip install -U waifupy
 ```
 
 Quick Example
@@ -32,11 +42,11 @@ Quick Example
 ### Basic Client Example
 
 ``` py
-import waifupics
-from waifupics import HTTPClient
+import waifupy
+from waifupy import HTTPClient
 
 cachable = True # Set to True if you want your client to cache payloads. If you dont want your client to cache paylods you can set the kwarg to False or do not call it.
-http = HTTPClient
+http = HttpClient
 
 waifu = waifupy.Client(cacheable=cacheable, http=http)
 

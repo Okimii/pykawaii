@@ -5,13 +5,13 @@ long_description = (Path(__file__).parent / "README.md").read_text()
 
 
 setup(
-    name='Waifupy',
+    name='waifupics',
     version='2.0.0',
     license='MIT',
     author='Okimii',
-    packages=find_packages('Waifupy'),
-    package_dir={'': 'Waifupy'},
-    url='https://github.com/Okimii/waifupy',
+    packages=find_packages('waifupics'),
+    package_dir={'': 'Waifupics'},
+    url='https://github.com/Okimii/waifupics',
     keywords='waifu.pics python api wrapper ',
     install_requires=[
         'aiohttp'
