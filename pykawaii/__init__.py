@@ -26,11 +26,8 @@ from .client import *
 from .http import *
 from .cache import *
 
-<<<<<<< HEAD
 __title__ = "pykawaii"
-=======
 __title__ = "Waifupy"
->>>>>>> parent of 2ee941b (Delete pykawaii directory)
 __author__ = "Okimii"
 __license__ = "MIT"
 __copyright__ = "Copyright 2022-present Okimii"
