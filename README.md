@@ -3,7 +3,7 @@
 
 Waifpy
 =======
-[![pypi!](https://img.shields.io/badge/Waifpy-Pypi-yellow](https://pypi.org/project/waifpy/)[![documentation!](https://img.shields.io/badge/Waifpy-Docs-blue)](https://waifpy.readthedocs.io/en/latest/)
+[![pypi!](https://img.shields.io/badge/Waifpy-Pypi-yellow)](https://pypi.org/project/waifpy/) [![documentation!](https://img.shields.io/badge/Waifpy-Docs-blue)](https://waifpy.readthedocs.io/en/latest/)
 
 Python api wrapper for the waifu.pics api made by: [okimii#0434](https://discord.com/users/637458038915203127)
 

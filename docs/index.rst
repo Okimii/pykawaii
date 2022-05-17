@@ -6,8 +6,15 @@ Welcome to Waifpy
    :maxdepth: 2
    :caption: Contents:
 
-.. automodule::
-    Waifpy
+.. autoclass:: models/NotSafeForWork
+   :members:
+   
+.. autoclass:: models/SafeForWork
+   :members:
+   
+.. autoclass:: Client
+   :members:
+  
 ==================
 
 * :ref:`genindex`
