@@ -6,10 +6,10 @@ Welcome to Waifpy
    :maxdepth: 2
    :caption: Contents:
 
-.. autoclass:: NotSafeForWork
+.. autoclass:: models/NotSafeForWork
    :members:
    
-.. autoclass:: SafeForWork
+.. autoclass:: models/SafeForWork
    :members:
    
 .. autoclass:: Client
