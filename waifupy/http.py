@@ -1,12 +1,12 @@
-from aiohttp import ClientSession
+import aiohttp
 
-__all__ = ("HTTPClient",)
+__all__ = ["HTTPClient"]
+
 
 class HTTPClient:
 
-    _base = "https://api.waifu.pics/"
+    BASE = "https://api.waifu.pics/"
 
-    async def _request(self, type: str, category: str, /) -> dict[str, str]:
-        async with ClientSession() as session:
-            async with session.get(f"{self._base}{type}/{category}") as response:
-                return await response.json()
+    async def request(self, type: str, category: str, /) -> dict[str, str]:
+        async with aiohttp.request("GET", f"{self.BASE}{type}{category}") as payload:
+            return await payload.json()
