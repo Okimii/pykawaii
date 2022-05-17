@@ -2,7 +2,7 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath('..'))
 
-project = 'waifpy'
+project = 'Pykawaii'
 copyright = '2022, Okimii'
 author = 'Okimii'
 

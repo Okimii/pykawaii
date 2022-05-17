@@ -1,9 +1,6 @@
-![image](https://user-images.githubusercontent.com/92546867/168911637-b661ab7d-767d-4e14-8dec-d59c99c8b5ac.png)
-
-
-Waifpy
+Pykawaii
 =======
-[![pypi!](https://img.shields.io/badge/Waifpy-Pypi-yellow)](https://pypi.org/project/waifpy/) [![documentation!](https://img.shields.io/badge/Waifpy-Docs-blue)](https://waifpy.readthedocs.io/en/latest/)
+[![pypi!](https://img.shields.io/badge/pykawaii-Pypi-yellow)](https://pypi.org/project/waifpy/) [![documentation!](https://img.shields.io/badge/pykawaii-Docs-blue)](https://waifpy.readthedocs.io/en/latest/)
 
 Python api wrapper for the waifu.pics api made by: [okimii#0434](https://discord.com/users/637458038915203127)
 
@@ -22,10 +19,10 @@ To install the library, you can just run thefollowing command:
 
 ``` sh
 # Linux/macOS
-python3 -m pip install -U waifpy
+python3 -m pip install -U pykawaii
 
 # Windows
-py -3 -m pip install -U waifpy
+py -3 -m pip install -U pykawaii
 ```
 
 Quick Example
@@ -34,9 +31,9 @@ Quick Example
 ### Basic Client Example
 
 ``` py
-import waifpy
+import pykawaii
 
-waifu = waifpy.Client()
+waifu = pykawaii.Client()
 
 async main() -> None:
     sfw_waifu_payload = await waifu.sfw.waifu()

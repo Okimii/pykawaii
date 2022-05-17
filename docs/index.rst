@@ -1,7 +1,6 @@
-Welcome to Waifpy
+Welcome to Pykawaii
 =================================
-.. currentmodule:: Waifpy
-
+.. currentmodule:: Pykawaii
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
