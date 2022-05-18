@@ -2,7 +2,7 @@
 
 Pykawaii
 =======
-[![pypi!](https://img.shields.io/badge/Pypi-v2.5.0-yellow)](https://pypi.org/project/pykawaii/) [![documentation!](https://img.shields.io/badge/pykawaii-Docs-blue)](https://waifpy.readthedocs.io/en/latest/)
+[![pypi!](https://img.shields.io/badge/Pypi-v2.6.0-yellow)](https://pypi.org/project/pykawaii/) [![documentation!](https://img.shields.io/badge/pykawaii-Docs-blue)](https://waifpy.readthedocs.io/en/latest/)
 
 Python api wrapper for the waifu.pics api made by: [okimii#0434](https://discord.com/users/637458038915203127)
 

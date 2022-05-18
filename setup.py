@@ -3,16 +3,16 @@ from pathlib import Path
 
 setup(
     name='pykawaii',
-    version='2.5.0',
+    version='2.6.0',
     license='MIT',
     author='Okimii',
-    packages=find_packages('pykawaii'),
-    package_dir={'': 'pykawaii'},
+    packages=find_packages(where=".", exclude=["docs", "dist"]),
     url='https://github.com/Okimii/pykawaii',
     keywords='waifu.pics python api wrapper ',
     description="Python api wrapper for the waifu.pics api",
     install_requires=[
-        'aiohttp'
+        'aiohttp',
+        "setuptools"
     ],
     long_description=(Path(__file__).parent / "README.md").read_text(),
     long_description_content_type='text/markdown'
