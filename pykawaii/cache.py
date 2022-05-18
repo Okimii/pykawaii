@@ -37,10 +37,11 @@ class Cache:
     def __setattr__(self, name: str, value: Any) -> None:
         setattr(self, name, value)
 
+    def __iter__(self) -> None:
+        return self.cache
+
     def getobj(self, index: int) -> str | None:
         return self.cache.get(index)
-        
-
     
     def setobj(self, value: str) -> str | None:
         return self.cache.append(value)
