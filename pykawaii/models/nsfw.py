@@ -38,7 +38,7 @@ class NotSafeForWork:
     TYPE = "nsfw"
 
     def __init__(self, client: "Client", /) -> None:
-        self.http = client()
+        self.http = client
 
     async def waifu(self) -> str:
 
