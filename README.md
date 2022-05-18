@@ -34,10 +34,11 @@ Quick Example
 
 ``` py
 import pykawaii
+import asyncio
 
 waifu = pykawaii.Client()
 
-async main() -> None:
+async def main() -> None:
     sfw_waifu_payload = await waifu.sfw.waifu()
     nsfw_waifu_payload = await waifu.nsfw.waifu()
     print(sfw_waifu_payload)
