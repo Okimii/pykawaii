@@ -22,10 +22,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-from __future__ import annotations
-
-from ..client import Client
-
 __all__ = ("SafeForWork",)
 
 
@@ -41,7 +37,7 @@ class SafeForWork:
 
     TYPE = "sfw"
     
-    def __init__(self, client: Client, /) -> None:
+    def __init__(self, client: "Client", /) -> None:
         self.http = client()
 
     async def waifu(self) -> str:
