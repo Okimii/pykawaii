@@ -44,7 +44,7 @@ class Cache:
     
     def getobj(self, index: int) -> str | None:
         if self.cachable:
-            return self.cache[index]
+            return self.cache.get(index)
         return None
 
     
