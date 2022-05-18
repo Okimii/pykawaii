@@ -31,9 +31,8 @@ __all__ = ["Cache"]
 
 
 class Cache:
-    def __init__(self, cachable: bool) -> None:
-        self.cachable = cachable
-        self.cache: list[str] = []
+
+    cache: list[str] = []
 
     def __setattr__(self, name: str, value: Any) -> None:
         setattr(self, name, value)
