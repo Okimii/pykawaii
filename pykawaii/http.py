@@ -37,7 +37,7 @@ class HTTPClient:
         self.cache = cache()
 
     async def request(self, type: str, category: str, /) -> str:
-        async with aiohttp.request("GET", f"{self.BASE}{type}{category}") as payload:
+        async with aiohttp.request("GET", f"{self.BASE}{type}/{category}") as payload:
             parsedpayload = (await payload.json()).get("url") or "Not found"
             self.cache.setobj(parsedpayload)
             return parsedpayload
