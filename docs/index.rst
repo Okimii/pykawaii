@@ -1,8 +1,8 @@
 Welcome to Pykawaii
 =================================
-.. currentmodule:: Pykawaii
+.. currentmodule:: pykawaii
 =======
-.. automodule:: waifpy
+.. automodule:: pykawaii
 
 .. toctree::
    :maxdepth: 2
