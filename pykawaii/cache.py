@@ -38,12 +38,10 @@ class Cache:
         setattr(self, name, value)
 
     def getobj(self, index: int) -> str | None:
-        if self.cachable:
-            return self.cache.get(index)
-        return None
+        return self.cache.get(index)
+        
 
     
     def setobj(self, value: str) -> str | None:
-        if self.cachable:
-            return self.cache.append(value)
-        return None
+        return self.cache.append(value)
+       

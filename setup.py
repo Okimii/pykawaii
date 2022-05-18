@@ -3,7 +3,7 @@ from pathlib import Path
 
 setup(
     name='pykawaii',
-    version='3.4.0',
+    version='3.5.0',
     license='MIT',
     author='Okimii',
     packages=find_packages(where=".", exclude=["docs", "dist"]),
