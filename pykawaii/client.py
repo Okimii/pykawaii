@@ -24,8 +24,8 @@ SOFTWARE.
 
 from .http import HTTPClient
 from .cache import Cache
-from .models.nsfw import NotSafeForWork
-from .models.sfw import SafeForWork
+from . import models
+from . import models
 
 __all__ = ["Client"]
 
@@ -36,7 +36,7 @@ class Client(HTTPClient):
         super().__init__(self.cache)
 
     @property
-    def nsfw(self) -> NotSafeForWork:
+    def nsfw(self) -> models.nsfw.NotSafeForWork:
 
         """
         nsfw attribute to return an instance of the NotSafeForWork class.
@@ -49,7 +49,7 @@ class Client(HTTPClient):
         return NotSafeForWork(self)
 
     @property
-    def sfw(self) -> SafeForWork:
+    def sfw(self) -> models.sfw.SafeForWork:
 
         """
         sfw attribute to return an instance of the SafeForWork class.

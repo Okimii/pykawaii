@@ -22,7 +22,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-from ..client import Client
+from .. import client
 
 __all__ = ("SafeForWork",)
 
@@ -39,7 +39,7 @@ class SafeForWork:
 
     TYPE = "sfw"
     
-    def __init__(self, client: Client, /) -> None:
+    def __init__(self, client: client.Client, /) -> None:
         self.http = client()
 
     async def waifu(self) -> str:
@@ -413,5 +413,3 @@ class SafeForWork:
 
         return (await self.http.request(self.TYPE, "cringe"))
 
-
-Sfw = SafeForWork
