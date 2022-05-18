@@ -24,8 +24,8 @@ SOFTWARE.
 
 from .http import HTTPClient
 from .cache import Cache
-from .models import NotSafeForWork
-from .models import SafeForWork
+from .models.nsfw import NotSafeForWork
+from .models.sfw import SafeForWork
 
 __all__ = ["Client"]
 
