@@ -36,13 +36,13 @@ Quick Example
 import pykawaii
 import asyncio
 
-waifu = pykawaii.Client()
+kawaii = pykawaii.Client()
 
 async def main() -> None:
-    sfw_waifu_payload = await waifu.sfw.waifu()
-    nsfw_waifu_payload = await waifu.nsfw.waifu()
-    print(sfw_waifu_payload)
-    print(nsfw_waifu_payload)
+    sfw_img_url = await kawaii.sfw.waifu()
+    nsfw_img_url = await kawaii.nsfw.waifu()
+    print(sfw_img_url)
+    print(nsfw_img_url)
 
 if __name__ == "__main__":
     asyncio.run(main())
