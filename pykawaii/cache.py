@@ -38,7 +38,8 @@ class Cache:
         setattr(self, name, value)
 
     def __iter__(self) -> None:
-        return self.cache
+        for img in self.cache:
+            yield img
 
     def getobj(self, index: int) -> str | None:
         return self.cache.get(index)
