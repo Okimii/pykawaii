@@ -37,10 +37,6 @@ class Cache:
     def __setattr__(self, name: str, value: Any) -> None:
         setattr(self, name, value)
 
-    def __getattribute__(self, name: str) -> Any:
-        getattr(self, name)
-
-    
     def getobj(self, index: int) -> str | None:
         if self.cachable:
             return self.cache.get(index)

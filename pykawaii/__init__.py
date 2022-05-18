@@ -27,8 +27,7 @@ from .http import *
 from .cache import *
 
 __title__ = "pykawaii"
-__title__ = "Waifupy"
 __author__ = "Okimii"
 __license__ = "MIT"
 __copyright__ = "Copyright 2022-present Okimii"
-__version__ = "3.3.0"
+__version__ = "3.4.0"
