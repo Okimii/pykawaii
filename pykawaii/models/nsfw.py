@@ -38,7 +38,6 @@ class NotSafeForWork:
     """
 
     TYPE = "nsfw"
-    URL = "url"
 
     def __init__(self, client: Client, /) -> None:
         self.http = client()
@@ -53,7 +52,7 @@ class NotSafeForWork:
         :class:`str`
         """
 
-        return (await self._http._request(self.TYPE, "waifu"))[self._URL]
+        return (await self._http._request(self.TYPE, "waifu"))
 
     async def neko(self) -> str:
 
@@ -65,7 +64,7 @@ class NotSafeForWork:
         :class:`str`
         """
 
-        return (await self._http._request(self.TYPE, "neko"))[self._URL]
+        return (await self._http._request(self.TYPE, "neko"))
 
     async def trap(self) -> str:
 
@@ -77,7 +76,7 @@ class NotSafeForWork:
         :class:`str`
         """
 
-        return (await self._http._request(self.TYPE, "trap"))[self._URL]
+        return (await self._http._request(self.TYPE, "trap"))
 
     async def blowjob(self) -> str:
 
@@ -89,7 +88,7 @@ class NotSafeForWork:
         :class:`str`
         """
 
-        return (await self._http._request(self.TYPE, "blowjob"))[self._URL]
+        return (await self._http._request(self.TYPE, "blowjob"))
 
 
 Nsfw = NotSafeForWork

@@ -38,8 +38,7 @@ class SafeForWork:
     """
 
     TYPE = "sfw"
-    URL = "URL"
-
+    
     def __init__(self, client: Client, /) -> None:
         self.http = client()
 
@@ -53,7 +52,7 @@ class SafeForWork:
         :class:`str`
         """
 
-        return (await self.http.request(self.TYPE, "waifu"))[self.URL]
+        return (await self.http.request(self.TYPE, "waifu"))
 
     async def neko(self) -> str:
 
@@ -65,7 +64,7 @@ class SafeForWork:
         :class:`str`
         """
 
-        return (await self.http.request(self.TYPE, "neko"))[self.URL]
+        return (await self.http.request(self.TYPE, "neko"))
 
     async def shinobu(self) -> str:
         
@@ -77,7 +76,7 @@ class SafeForWork:
         :class:`str`
         """
 
-        return (await self.http.request(self.TYPE, "shinobu"))[self.URL]
+        return (await self.http.request(self.TYPE, "shinobu"))
 
     async def bully(self) -> str:
         
@@ -89,7 +88,7 @@ class SafeForWork:
         :class:`str`
         """
 
-        return (await self.http.request(self.TYPE, "bully"))[self.URL]
+        return (await self.http.request(self.TYPE, "bully"))
 
     async def cuddle(self) -> str:
         
@@ -101,8 +100,7 @@ class SafeForWork:
         :class:`str`
         """
 
-        return (await self.http.request(self.TYPE, "cuddle"))[self.URL]
-
+        return (await self.http.request(self.TYPE, "cuddle"))
     async def megumin(self) -> str:
         
         """
@@ -113,7 +111,7 @@ class SafeForWork:
         :class:`str`
         """
 
-        return (await self.http.request(self.TYPE, "megumin"))[self.URL]
+        return (await self.http.request(self.TYPE, "megumin"))
 
     async def cry(self) -> str:
         
@@ -125,7 +123,7 @@ class SafeForWork:
         :class:`str`
         """
 
-        return (await self.http.request(self.TYPE, "cry"))[self.URL]
+        return (await self.http.request(self.TYPE, "cry"))
 
     async def hug(self) -> str:
         
@@ -137,7 +135,7 @@ class SafeForWork:
         :class:`str`
         """
 
-        return (await self.http.request(self.TYPE, "hug"))[self.URL]
+        return (await self.http.request(self.TYPE, "hug"))
 
     async def awoo(self) -> str:
         
@@ -149,7 +147,7 @@ class SafeForWork:
         :class:`str`
         """
 
-        return (await self.http.request(self.TYPE, "awoo"))[self.URL]
+        return (await self.http.request(self.TYPE, "awoo"))
 
     async def kiss(self) -> str:
         
@@ -161,7 +159,7 @@ class SafeForWork:
         :class:`str`
         """
 
-        return (await self.http.request(self.TYPE, "kiss"))[self.URL]
+        return (await self.http.request(self.TYPE, "kiss"))
 
     async def lick(self) -> str:
         
@@ -173,7 +171,7 @@ class SafeForWork:
         :class:`str`
         """
 
-        return (await self.http.request(self.TYPE, "lick"))[self.URL]
+        return (await self.http.request(self.TYPE, "lick"))
 
     async def pat(self) -> str:
         
@@ -185,7 +183,7 @@ class SafeForWork:
         :class:`str`
         """
 
-        return (await self.http.request(self.TYPE, "pat"))[self.URL]
+        return (await self.http.request(self.TYPE, "pat"))
 
     async def wave(self) -> str:
         
@@ -197,7 +195,7 @@ class SafeForWork:
         :class:`str`
         """
 
-        return (await self.http.request(self.TYPE, "wave"))[self.URL]
+        return (await self.http.request(self.TYPE, "wave"))
 
     async def smug(self) -> str:
         
@@ -209,7 +207,7 @@ class SafeForWork:
         :class:`str`
         """
 
-        return (await self.http.request(self.TYPE, "smug"))[self.URL]
+        return (await self.http.request(self.TYPE, "smug"))
 
     async def bonk(self) -> str:
         
@@ -221,7 +219,7 @@ class SafeForWork:
         :class:`str`
         """
 
-        return (await self.http.request(self.TYPE, "bonk"))[self.URL]
+        return (await self.http.request(self.TYPE, "bonk"))
 
     async def yeet(self) -> str:
         
@@ -233,7 +231,7 @@ class SafeForWork:
         :class:`str`
         """
 
-        return (await self.http.request(self.TYPE, "yeet"))[self.URL]
+        return (await self.http.request(self.TYPE, "yeet"))
 
     async def blush(self) -> str:
         
@@ -245,7 +243,7 @@ class SafeForWork:
         :class:`str`
         """
 
-        return (await self.http.request(self.TYPE, "blush"))[self.URL]
+        return (await self.http.request(self.TYPE, "blush"))
 
     async def smile(self) -> str:
         
@@ -257,7 +255,7 @@ class SafeForWork:
         :class:`str`
         """
 
-        return (await self.http.request(self.TYPE, "smile"))[self.URL]
+        return (await self.http.request(self.TYPE, "smile"))
 
     async def highfive(self) -> str:
         
@@ -269,7 +267,7 @@ class SafeForWork:
         :class:`str`
         """
 
-        return (await self.http.request(self.TYPE, "highfive"))[self.URL]
+        return (await self.http.request(self.TYPE, "highfive"))
 
     async def handhold(self) -> str:
         
@@ -281,7 +279,7 @@ class SafeForWork:
         :class:`str`
         """
 
-        return (await self.http.request(self.TYPE, "handhold"))[self.URL]
+        return (await self.http.request(self.TYPE, "handhold"))
 
     async def nom(self) -> str:
         
@@ -293,7 +291,7 @@ class SafeForWork:
         :class:`str`
         """
 
-        return (await self.http.request(self.TYPE, "nom"))[self.URL]
+        return (await self.http.request(self.TYPE, "nom"))
 
     async def bite(self) -> str:
         
@@ -305,7 +303,7 @@ class SafeForWork:
         :class:`str`
         """
 
-        return (await self.http.request(self.TYPE, "bite"))[self.URL]
+        return (await self.http.request(self.TYPE, "bite"))
 
     async def glomp(self) -> str:
         
@@ -317,7 +315,7 @@ class SafeForWork:
         :class:`str`
         """
 
-        return (await self.http.request(self.TYPE, "glomp"))[self.URL]
+        return (await self.http.request(self.TYPE, "glomp"))
 
     async def slap(self) -> str:
         
@@ -329,7 +327,7 @@ class SafeForWork:
         :class:`str`
         """
 
-        return (await self.http.request(self.TYPE, "slap"))[self.URL]
+        return (await self.http.request(self.TYPE, "slap"))
 
     async def kill(self) -> str:
         
@@ -341,7 +339,7 @@ class SafeForWork:
         :class:`str`
         """
 
-        return (await self.http.request(self.TYPE, "kill"))[self.URL]
+        return (await self.http.request(self.TYPE, "kill"))
 
     async def wink(self) -> str:
         
@@ -353,7 +351,7 @@ class SafeForWork:
         :class:`str`
         """
 
-        return (await self.http.request(self.TYPE, "wink"))[self.URL]
+        return (await self.http.request(self.TYPE, "wink"))
 
     async def kick(self) -> str:
         
@@ -365,7 +363,7 @@ class SafeForWork:
         :class:`str`
         """
 
-        return (await self.http.request(self.TYPE, "kick"))[self.URL]
+        return (await self.http.request(self.TYPE, "kick"))
 
     async def poke(self) -> str:
         
@@ -377,7 +375,7 @@ class SafeForWork:
         :class:`str`
         """
 
-        return (await self.http.request(self.TYPE, "poke"))[self.URL]
+        return (await self.http.request(self.TYPE, "poke"))
 
     async def happy(self) -> str:
         
@@ -389,7 +387,7 @@ class SafeForWork:
         :class:`str`
         """
 
-        return (await self.http.request(self.TYPE, "happy"))[self.URL]
+        return (await self.http.request(self.TYPE, "happy"))
 
     async def dance(self) -> str:
         
@@ -401,7 +399,7 @@ class SafeForWork:
         :class:`str`
         """
 
-        return (await self.http.request(self.TYPE, "dance"))[self.URL]
+        return (await self.http.request(self.TYPE, "dance"))
 
     async def cringe(self) -> str:
         
@@ -413,7 +411,7 @@ class SafeForWork:
         :class:`str`
         """
 
-        return (await self.http.request(self.TYPE, "cringe"))[self.URL]
+        return (await self.http.request(self.TYPE, "cringe"))
 
 
 Sfw = SafeForWork
