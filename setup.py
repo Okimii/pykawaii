@@ -10,6 +10,7 @@ setup(
     package_dir={'': 'pykawaii'},
     url='https://github.com/Okimii/pykawaii',
     keywords='waifu.pics python api wrapper ',
+    description="Python api wrapper for the waifu.pics api",
     install_requires=[
         'aiohttp'
     ],
