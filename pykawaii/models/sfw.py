@@ -22,7 +22,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-__all__ = ("SafeForWork",)
+__all__ = ["SafeForWork"]
+
+
+from unicodedata import category
 
 
 class SafeForWork:
@@ -38,7 +41,7 @@ class SafeForWork:
     TYPE = "sfw"
     
     def __init__(self, client: "Client", /) -> None:
-        self.http = client
+        self.http = client         
 
     async def waifu(self) -> str:
 
