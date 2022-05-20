@@ -31,13 +31,13 @@ __all__ = ["HTTPClient"]
 
 class HTTPClient:
 
-    BASE = "https://api.waifu.pics/"
+    BASE = "https://api.waifu.pics"
 
-    def __init__(self, cache: Cache) -> None:
-        self.cache = cache()
+    def __init__(self) -> None:
+        self.cache = Cache()
 
     async def request(self, type: str, category: str, /) -> str:
-        async with aiohttp.request("GET", f"{self.BASE}{type}/{category}") as payload:
-            parsedpayload = (await payload.json()).get("url") or "Not found"
+        async with aiohttp.request("GET", f"{self.BASE}/{type}/{category}") as payload:
+            parsedpayload = (await payload.json()).get("url", "Not found")
             self.cache.setobj(parsedpayload)
             return parsedpayload

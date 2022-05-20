@@ -32,8 +32,7 @@ __all__ = ["Client"]
 
 class Client(HTTPClient):
     def __init__(self) -> None:
-        self.cache = Cache
-        super().__init__(self.cache)
+        super().__init__()
 
     @property
     def nsfw(self) -> NotSafeForWork:
