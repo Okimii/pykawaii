@@ -25,9 +25,6 @@ SOFTWARE.
 __all__ = ["SafeForWork"]
 
 
-from unicodedata import category
-
-
 class SafeForWork:
 
     """
