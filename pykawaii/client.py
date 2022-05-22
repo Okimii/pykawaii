@@ -23,8 +23,8 @@ SOFTWARE.
 """
 
 from .http import HTTPClient
-from . import NotSafeForWork
-from . import SafeForWork
+from .models import NotSafeForWork
+from .models import SafeForWork
 
 __all__ = ["Client"]
 
