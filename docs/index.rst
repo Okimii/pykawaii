@@ -1,8 +1,14 @@
 Welcome to Pykawaii
 =================================
-.. automodule:: pykawaii
+.. currentmodule:: pykawaii
 =======
 
+.. autoclass:: ../NotSafeForWork
+   :members:
+   
+.. autoclass:: ../SafeForWork
+   :members:
+   
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
