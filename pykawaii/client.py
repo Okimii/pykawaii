@@ -35,7 +35,9 @@ class Client(HTTPClient):
     
     Example
     --------
+    
     .. code:: python
+    
         import pykawaii
         import asyncio
         
@@ -49,6 +51,8 @@ class Client(HTTPClient):
 
         if __name__ == "__main__":
             asyncio.run(main())
+            
+            
     """
     
     def __init__(self) -> None:
