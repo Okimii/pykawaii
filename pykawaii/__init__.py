@@ -25,9 +25,10 @@ SOFTWARE.
 from .client import *
 from .http import *
 from .cache import *
+from .models import *
 
 __title__ = "pykawaii"
 __author__ = "Okimii"
 __license__ = "MIT"
 __copyright__ = "Copyright 2022-present Okimii"
-__version__ = "3.9.0"
+__version__ = "4.0.0"
