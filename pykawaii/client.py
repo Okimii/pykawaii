@@ -35,7 +35,7 @@ class Client(HTTPClient):
     
     Example
     --------
-    .. code-block:: python3
+    .. code:: python
         import pykawaii
         import asyncio
         
