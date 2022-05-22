@@ -6,10 +6,10 @@ Welcome to Pykawaii
 .. autoclass:: Client
    :members:
    
-.. autoclass:: NotSafeForWork
+.. autoclass:: <models/NotSafeForWork>
    :members:
   
-.. autoclass:: SafeForWork
+.. autoclass::  <models/SafeForWork>
    :members:
    
 .. toctree::
