@@ -6,14 +6,14 @@ Welcome to Pykawaii
 .. autoclass:: Client
    :members:
    
-.. autoclass:: models/NotSafeForWork
+.. autoclass:: models/index.rst
    :members:
   
-.. autoclass::  models/SafeForWork
+.. autoclass::  models/index.rst
    :members:
    
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: Contents:
   
 ==================
