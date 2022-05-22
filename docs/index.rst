@@ -3,10 +3,13 @@ Welcome to Pykawaii
 .. currentmodule:: pykawaii
 =======
 
-.. autoclass:: ../NotSafeForWork
+.. autoclass:: Client
    :members:
    
-.. autoclass:: ../SafeForWork
+.. autoclass:: .models.nsfw.NotSafeForWork
+   :members:
+   
+.. autoclass:: .models.sfw.SafeForWork
    :members:
    
 .. toctree::
