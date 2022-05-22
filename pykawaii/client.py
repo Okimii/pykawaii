@@ -30,6 +30,27 @@ __all__ = ["Client"]
 
 
 class Client(HTTPClient):
+    """
+    Main client.
+    
+    Example
+    --------
+    .. code-block:: python3
+        import pykawaii
+        import asyncio
+        
+        kawaii = pykawaii.Client()
+        
+        async def main() -> None:
+            sfw_img_url = await kawaii.sfw.waifu()
+            nsfw_img_url = await kawaii.nsfw.waifu()
+            print(sfw_img_url)
+            print(nsfw_img_url)
+
+        if __name__ == "__main__":
+            asyncio.run(main())
+    """
+    
     def __init__(self) -> None:
         super().__init__()
 
