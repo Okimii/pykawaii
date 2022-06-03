@@ -24,7 +24,7 @@ SOFTWARE.
 
 from __future__ import annotations
 
-from typing import Any
+from typing import Any, iterator
 
 
 __all__ = ["Cache"]
@@ -37,7 +37,7 @@ class Cache:
     def __setattr__(self, name: str, value: Any) -> None:
         setattr(self, name, value)
 
-    def __iter__(self) -> iter[str]:
+    def __iter__(self) -> iterator[str]:
             yield from self.cache
 
     def getobj(self, index: int) -> str | None:
